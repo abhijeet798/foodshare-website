@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodShare – Share More. Waste Less. Feed More.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+        <span class="logo-icon">🍃</span>
+        <span class="logo-text">FoodShare</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#tech">Tech Stack</a></li>
+        <li><a href="#ngo">NGOs</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact" class="cta-nav">Get Started</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="overview">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🌱 Development Plan 2026</div>
+      <h1 class="hero-title">
+        <span class="brand">FoodShare</span>
+      </h1>
+      <p class="hero-tagline">Share More. Waste Less. Feed More.</p>
+      <p class="hero-sub">
+        A community-driven digital platform connecting food donors with those in need —
+        reducing food waste while fighting hunger, one meal at a time.
+      </p>
+      <div class="hero-actions">
+        <a href="#solution" class="btn btn-primary">Explore the Plan</a>
+        <a href="#roadmap" class="btn btn-outline">View Roadmap</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">1.3B</span>
+          <span class="stat-lbl">Tons food wasted/yr</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">828M</span>
+          <span class="stat-lbl">People face hunger</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">$1T</span>
+          <span class="stat-lbl">Economic food loss</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PROBLEM ══════════════ -->
+  <section class="section problem-section" id="problem">
+    <div class="container">
+      <div class="section-label">The Crisis</div>
+      <h2 class="section-title">Why FoodShare Matters</h2>
+      <p class="section-sub">The world produces enough food to feed everyone, yet millions go to bed hungry every night.</p>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-icon">🗑️</div>
+          <h3>Massive Food Waste</h3>
+          <p>Restaurants, households, and supermarkets discard billions of tons of perfectly edible food every year due to lack of coordination and awareness.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🍽️</div>
+          <h3>Widespread Hunger</h3>
+          <p>828 million people worldwide experience food insecurity daily, with many unable to access nutritious meals despite surplus food existing nearby.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🌍</div>
+          <h3>Environmental Damage</h3>
+          <p>Rotting food in landfills produces methane, contributing 8–10% of global greenhouse gas emissions and accelerating climate change.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🔗</div>
+          <h3>No Efficient Bridge</h3>
+          <p>Donors and recipients lack a reliable, real-time platform to connect quickly, resulting in missed opportunities to distribute surplus food.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SOLUTION ══════════════ -->
+  <section class="section solution-section" id="solution">
+    <div class="container">
+      <div class="section-label">Our Answer</div>
+      <h2 class="section-title">The FoodShare Solution</h2>
+      <p class="section-sub">A smart, community-first platform that bridges the gap between surplus food and those who need it most.</p>
+      <div class="solution-grid">
+        <div class="solution-visual">
+          <div class="flow-diagram">
+            <div class="flow-node donor">
+              <span class="flow-icon">🏪</span>
+              <strong>Donor</strong>
+              <small>Restaurant / Home / Store</small>
+            </div>
+            <div class="flow-arrow">
+              <div class="arrow-line"></div>
+              <span class="arrow-label">Lists Surplus Food</span>
+            </div>
+            <div class="flow-node platform">
+              <span class="flow-icon">🍃</span>
+              <strong>FoodShare</strong>
+              <small>AI-Powered Matching</small>
+            </div>
+            <div class="flow-arrow">
+              <div class="arrow-line"></div>
+              <span class="arrow-label">Connects &amp; Notifies</span>
+            </div>
+            <div class="flow-node recipient">
+              <span class="flow-icon">🤝</span>
+              <strong>Recipient</strong>
+              <small>NGO / Individual / Shelter</small>
+            </div>
+          </div>
+        </div>
+        <div class="solution-points">
+          <div class="solution-point">
+            <div class="sp-icon">⚡</div>
+            <div>
+              <h4>Real-Time Listings</h4>
+              <p>Donors post available food instantly. Recipients get notified in real time based on location and preferences.</p>
+            </div>
+          </div>
+          <div class="solution-point">
+            <div class="sp-icon">🤖</div>
+            <div>
+              <h4>AI-Powered Matching</h4>
+              <p>Smart algorithms match donations to the most suitable recipients, factoring in distance, quantity, and dietary needs.</p>
+            </div>
+          </div>
+          <div class="solution-point">
+            <div class="sp-icon">📍</div>
+            <div>
+              <h4>Geo-Location Routing</h4>
+              <p>Interactive maps guide volunteers for pick-up and drop-off, minimizing travel time and maximizing impact.</p>
+            </div>
+          </div>
+          <div class="solution-point">
+            <div class="sp-icon">📊</div>
+            <div>
+              <h4>Impact Tracking</h4>
+              <p>Transparent dashboards show meals saved, CO₂ avoided, and community impact in real time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FEATURES ══════════════ -->
+  <section class="section features-section" id="features">
+    <div class="container">
+      <div class="section-label">Platform Features</div>
+      <h2 class="section-title">Everything You Need</h2>
+      <p class="section-sub">Built for donors, recipients, volunteers, and administrators — a complete ecosystem for food redistribution.</p>
+      <div class="features-tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="donors">🏪 Donors</button>
+          <button class="tab-btn" data-tab="ngo-tab">🏛️ NGOs</button>
+          <button class="tab-btn" data-tab="recipients">🤝 Recipients</button>
+          <button class="tab-btn" data-tab="volunteers">🚴 Volunteers</button>
+          <button class="tab-btn" data-tab="admin">⚙️ Admin</button>
+        </div>
+        <div class="tab-content active" id="donors">
+          <div class="feature-cards">
+            <div class="feature-card"><span>📋</span><h4>Quick Food Listing</h4><p>Post surplus food in under 60 seconds with photo, quantity, expiry, and location.</p></div>
+            <div class="feature-card"><span>📱</span><h4>Mobile App</h4><p>Dedicated iOS &amp; Android apps for on-the-go food listing and donation tracking.</p></div>
+            <div class="feature-card"><span>🏆</span><h4>Donor Rewards</h4><p>Earn badges, certificates, and recognition for consistent contributions.</p></div>
+            <div class="feature-card"><span>📈</span><h4>Donation Analytics</h4><p>See your total impact: meals provided, CO₂ saved, people helped.</p></div>
+          </div>
+        </div>
+        <div class="tab-content" id="ngo-tab">
+          <div class="feature-cards">
+            <div class="feature-card"><span>🏛️</span><h4>NGO Dashboard</h4><p>Dedicated control panel to manage incoming donations, volunteers, and distribution schedules in one place.</p></div>
+            <div class="feature-card"><span>📦</span><h4>Bulk Food Requests</h4><p>Submit bulk food needs for large shelters, orphanages, or community kitchens with quantity and dietary filters.</p></div>
+            <div class="feature-card"><span>🤝</span><h4>Donor Matching</h4><p>AI matches your NGO with the most suitable, nearby donors based on your recurring needs and capacity.</p></div>
+            <div class="feature-card"><span>📊</span><h4>Impact Reports</h4><p>Auto-generate monthly reports showing meals served, beneficiaries reached, and food categories received.</p></div>
+            <div class="feature-card"><span>🔔</span><h4>Priority Alerts</h4><p>NGOs get first-priority notifications for large donations — before individual recipients.</p></div>
+            <div class="feature-card"><span>🛡️</span><h4>Verified NGO Badge</h4><p>Get a verified badge after document vetting — builds donor trust and increases donation frequency.</p></div>
+          </div>
+        </div>
+        <div class="tab-content" id="recipients">
+          <div class="feature-cards">
+            <div class="feature-card"><span>🔔</span><h4>Smart Alerts</h4><p>Get notified instantly when food matching your needs is available nearby.</p></div>
+            <div class="feature-card"><span>🗺️</span><h4>Nearby Food Map</h4><p>Browse available donations on an interactive map with filters for type and quantity.</p></div>
+            <div class="feature-card"><span>📅</span><h4>Scheduled Pickups</h4><p>Schedule recurring pickups from reliable donors — ideal for NGOs and shelters.</p></div>
+            <div class="feature-card"><span>💬</span><h4>Direct Messaging</h4><p>Communicate securely with donors to coordinate logistics.</p></div>
+          </div>
+        </div>
+        <div class="tab-content" id="volunteers">
+          <div class="feature-cards">
+            <div class="feature-card"><span>🚗</span><h4>Route Optimizer</h4><p>AI-generated pickup/drop-off routes to maximize deliveries per trip.</p></div>
+            <div class="feature-card"><span>✅</span><h4>Delivery Verification</h4><p>QR code-based confirmation system for transparent, verified deliveries.</p></div>
+            <div class="feature-card"><span>⭐</span><h4>Volunteer Points</h4><p>Earn points for every delivery — redeem for community perks and recognition.</p></div>
+            <div class="feature-card"><span>📡</span><h4>Offline Mode</h4><p>Continue operations in low-connectivity areas with offline-first capability.</p></div>
+          </div>
+        </div>
+        <div class="tab-content" id="admin">
+          <div class="feature-cards">
+            <div class="feature-card"><span>🖥️</span><h4>Control Dashboard</h4><p>Full platform oversight: users, listings, deliveries, and performance metrics.</p></div>
+            <div class="feature-card"><span>🛡️</span><h4>Verification System</h4><p>Vet donors, recipients, and volunteers with document uploads and approvals.</p></div>
+            <div class="feature-card"><span>📊</span><h4>Reports & Insights</h4><p>Generate detailed reports on food flows, geographic reach, and impact data.</p></div>
+            <div class="feature-card"><span>🔧</span><h4>Config & Settings</h4><p>Manage regions, categories, notification rules, and platform configurations.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ TECH STACK ══════════════ -->
+  <section class="section tech-section" id="tech">
+    <div class="container">
+      <div class="section-label">Technical Architecture</div>
+      <h2 class="section-title">Built to Scale</h2>
+      <p class="section-sub">A modern, cloud-native tech stack designed for performance, security, and rapid growth.</p>
+      <div class="tech-layers">
+
+        <div class="tech-layer">
+          <div class="layer-title"><span class="layer-icon">🖥️</span> Frontend</div>
+          <div class="tech-pills">
+            <span class="pill pill-blue">React.js 18</span>
+            <span class="pill pill-blue">Next.js 14</span>
+            <span class="pill pill-blue">Tailwind CSS</span>
+            <span class="pill pill-blue">React Native</span>
+            <span class="pill pill-blue">TypeScript</span>
+            <span class="pill pill-blue">PWA Support</span>
+          </div>
+        </div>
+
+        <div class="tech-layer">
+          <div class="layer-title"><span class="layer-icon">⚙️</span> Backend</div>
+          <div class="tech-pills">
+            <span class="pill pill-green">Node.js</span>
+            <span class="pill pill-green">Express.js</span>
+            <span class="pill pill-green">GraphQL</span>
+            <span class="pill pill-green">REST APIs</span>
+            <span class="pill pill-green">WebSockets</span>
+            <span class="pill pill-green">Python (AI/ML)</span>
+          </div>
+        </div>
+
+        <div class="tech-layer">
+          <div class="layer-title"><span class="layer-icon">🗄️</span> Database & Storage</div>
+          <div class="tech-pills">
+            <span class="pill pill-orange">PostgreSQL</span>
+            <span class="pill pill-orange">MongoDB</span>
+            <span class="pill pill-orange">Redis (Cache)</span>
+            <span class="pill pill-orange">AWS S3</span>
+            <span class="pill pill-orange">Elasticsearch</span>
+          </div>
+        </div>
+
+        <div class="tech-layer">
+          <div class="layer-title"><span class="layer-icon">☁️</span> Cloud & DevOps</div>
+          <div class="tech-pills">
+            <span class="pill pill-purple">AWS / GCP</span>
+            <span class="pill pill-purple">Docker</span>
+            <span class="pill pill-purple">Kubernetes</span>
+            <span class="pill pill-purple">CI/CD Pipeline</span>
+            <span class="pill pill-purple">GitHub Actions</span>
+            <span class="pill pill-purple">Terraform</span>
+          </div>
+        </div>
+
+        <div class="tech-layer">
+          <div class="layer-title"><span class="layer-icon">🤖</span> AI & Integrations</div>
+          <div class="tech-pills">
+            <span class="pill pill-red">TensorFlow</span>
+            <span class="pill pill-red">Google Maps API</span>
+            <span class="pill pill-red">Firebase FCM</span>
+            <span class="pill pill-red">Twilio SMS</span>
+            <span class="pill pill-red">Stripe Payments</span>
+            <span class="pill pill-red">Gemini API</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="arch-diagram">
+        <div class="arch-box client">Client Apps<small>Web · iOS · Android</small></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-box gateway">API Gateway<small>Auth · Rate Limit</small></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-box services">Microservices<small>Users · Food · Match · Delivery</small></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-box data">Data Layer<small>DB · Cache · Storage</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ NGO SECTION ══════════════ -->
+  <section class="section ngo-section" id="ngo">
+    <div class="container">
+      <div class="section-label">NGO Partnership</div>
+      <h2 class="section-title">Empowering NGOs &amp; Shelters</h2>
+      <p class="section-sub">FoodShare gives NGOs the tools, data, and partnerships they need to serve more people with less effort.</p>
+
+      <!-- NGO How It Works -->
+      <div class="ngo-steps">
+        <div class="ngo-step">
+          <div class="ngo-step-num">01</div>
+          <div class="ngo-step-icon">📝</div>
+          <h4>Register Your NGO</h4>
+          <p>Sign up and submit your documents. Our team verifies your organisation within 48 hours and grants you a Verified NGO badge.</p>
+        </div>
+        <div class="ngo-step-arrow">→</div>
+        <div class="ngo-step">
+          <div class="ngo-step-num">02</div>
+          <div class="ngo-step-icon">⚙️</div>
+          <h4>Set Your Needs</h4>
+          <p>Specify food types, quantities, dietary restrictions, pickup capacity, and service area so our AI finds the perfect matches.</p>
+        </div>
+        <div class="ngo-step-arrow">→</div>
+        <div class="ngo-step">
+          <div class="ngo-step-num">03</div>
+          <div class="ngo-step-icon">🔔</div>
+          <h4>Receive Alerts</h4>
+          <p>Get instant notifications when matching donations are posted. NGOs get priority access before individual recipients.</p>
+        </div>
+        <div class="ngo-step-arrow">→</div>
+        <div class="ngo-step">
+          <div class="ngo-step-num">04</div>
+          <div class="ngo-step-icon">📊</div>
+          <h4>Track &amp; Report</h4>
+          <p>Use your NGO dashboard to track all donations, generate compliance reports, and show your donors real impact numbers.</p>
+        </div>
+      </div>
+
+      <!-- NGO Benefits Grid -->
+      <div class="ngo-benefits">
+        <div class="ngo-benefit-header">
+          <h3>Why NGOs Choose FoodShare</h3>
+          <p>Everything your organisation needs — completely free.</p>
+        </div>
+        <div class="ngo-benefit-grid">
+          <div class="ngo-benefit-card">
+            <span class="nb-icon">🆓</span>
+            <h4>Always Free for NGOs</h4>
+            <p>All NGO features are permanently free. No subscription, no hidden costs, no catch.</p>
+          </div>
+          <div class="ngo-benefit-card">
+            <span class="nb-icon">🎯</span>
+            <h4>AI-Matched Donations</h4>
+            <p>Smart matching ensures you receive food that suits your beneficiaries' needs — not just random surplus.</p>
+          </div>
+          <div class="ngo-benefit-card">
+            <span class="nb-icon">📋</span>
+            <h4>Compliance Reports</h4>
+            <p>Auto-generated PDF reports for your funders, government audits, and CSR partners.</p>
+          </div>
+          <div class="ngo-benefit-card">
+            <span class="nb-icon">🚚</span>
+            <h4>Volunteer Delivery Network</h4>
+            <p>Can't pick up food yourself? Request a volunteer driver through the platform at no cost.</p>
+          </div>
+          <div class="ngo-benefit-card">
+            <span class="nb-icon">🌐</span>
+            <h4>Multi-Location Support</h4>
+            <p>Manage multiple branches or distribution centres from a single NGO account.</p>
+          </div>
+          <div class="ngo-benefit-card">
+            <span class="nb-icon">🤝</span>
+            <h4>Corporate Donor Access</h4>
+            <p>Connect directly with corporate donors and restaurant chains looking for verified NGO partners.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- NGO Types We Serve -->
+      <div class="ngo-types">
+        <h3>Types of Organisations We Serve</h3>
+        <div class="ngo-type-grid">
+          <div class="ngo-type-pill">🏠 Old Age Homes</div>
+          <div class="ngo-type-pill">👶 Orphanages</div>
+          <div class="ngo-type-pill">🏥 Community Kitchens</div>
+          <div class="ngo-type-pill">🛖 Homeless Shelters</div>
+          <div class="ngo-type-pill">📚 Anganwadis</div>
+          <div class="ngo-type-pill">⛪ Religious Trusts</div>
+          <div class="ngo-type-pill">🏫 Mid-Day Meal NGOs</div>
+          <div class="ngo-type-pill">💊 Hunger Relief Orgs</div>
+          <div class="ngo-type-pill">🌾 Food Banks</div>
+          <div class="ngo-type-pill">🩺 Rural Health Camps</div>
+          <div class="ngo-type-pill">👩‍👧 Women Shelters</div>
+          <div class="ngo-type-pill">♿ Disability Centres</div>
+        </div>
+      </div>
+
+      <!-- NGO CTA -->
+      <div class="ngo-cta">
+        <div class="ngo-cta-left">
+          <h3>Is Your NGO Ready to End Food Insecurity?</h3>
+          <p>Join 500+ NGOs already registered on FoodShare and start receiving verified food donations today.</p>
+          <div class="ngo-cta-stats">
+            <div class="ncs">
+              <strong>500+</strong>
+              <span>NGOs Registered</span>
+            </div>
+            <div class="ncs">
+              <strong>48 hrs</strong>
+              <span>Verification Time</span>
+            </div>
+            <div class="ncs">
+              <strong>100%</strong>
+              <span>Free Forever</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="margin-top:8px;">Register Your NGO 🏛️</a>
+        </div>
+        <div class="ngo-cta-right">
+          <div class="ngo-checklist">
+            <div class="ncl-title">NGO Registration Requirements</div>
+            <div class="ncl-item"><span class="ncl-check">✅</span> Valid NGO / Trust registration certificate</div>
+            <div class="ncl-item"><span class="ncl-check">✅</span> 80G or 12A tax exemption certificate (India)</div>
+            <div class="ncl-item"><span class="ncl-check">✅</span> Contact person with phone &amp; email</div>
+            <div class="ncl-item"><span class="ncl-check">✅</span> Service area and beneficiary details</div>
+            <div class="ncl-item"><span class="ncl-check">✅</span> Storage/distribution capacity (approx.)</div>
+            <div class="ncl-item"><span class="ncl-check">⏱️</span> Approval within 48 business hours</div>
+            <div class="ncl-note">🔒 All documents are stored securely and never shared publicly.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ ROADMAP ══════════════ -->
+  <section class="section roadmap-section" id="roadmap">
+    <div class="container">
+      <div class="section-label">Development Timeline</div>
+      <h2 class="section-title">Our Roadmap</h2>
+      <p class="section-sub">A phased approach to building, launching, and scaling FoodShare over 18 months.</p>
+      <div class="timeline">
+
+        <div class="timeline-item left">
+          <div class="tl-dot phase1-dot"></div>
+          <div class="tl-card">
+            <div class="tl-phase">Phase 1</div>
+            <div class="tl-period">Month 1–3 · Q1 2026</div>
+            <h3>Foundation & MVP</h3>
+            <ul>
+              <li>Project setup & tech architecture</li>
+              <li>Core user authentication (OAuth + JWT)</li>
+              <li>Basic food listing & browsing</li>
+              <li>Simple donor-recipient matching</li>
+              <li>Admin panel v1</li>
+              <li>Alpha testing with 50 users</li>
+            </ul>
+            <div class="tl-status status-done">✅ Planning Complete</div>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="tl-dot phase2-dot"></div>
+          <div class="tl-card">
+            <div class="tl-phase">Phase 2</div>
+            <div class="tl-period">Month 4–6 · Q2 2026</div>
+            <h3>Core Platform Launch</h3>
+            <ul>
+              <li>Geo-location & maps integration</li>
+              <li>Real-time notifications (push + SMS)</li>
+              <li>Mobile app (React Native) beta</li>
+              <li>Volunteer delivery module</li>
+              <li>Basic impact dashboard</li>
+              <li>500 user beta launch</li>
+            </ul>
+            <div class="tl-status status-active">🚀 In Development</div>
+          </div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="tl-dot phase3-dot"></div>
+          <div class="tl-card">
+            <div class="tl-phase">Phase 3</div>
+            <div class="tl-period">Month 7–10 · Q3 2026</div>
+            <h3>AI & Smart Features</h3>
+            <ul>
+              <li>AI-powered matching algorithm</li>
+              <li>Predictive surplus forecasting</li>
+              <li>Route optimization for volunteers</li>
+              <li>Gamification & reward system</li>
+              <li>Multi-language support</li>
+              <li>Partner NGO integrations</li>
+            </ul>
+            <div class="tl-status status-planned">📋 Planned</div>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="tl-dot phase4-dot"></div>
+          <div class="tl-card">
+            <div class="tl-phase">Phase 4</div>
+            <div class="tl-period">Month 11–14 · Q4 2026</div>
+            <h3>Scale & Growth</h3>
+            <ul>
+              <li>Multi-city expansion</li>
+              <li>Corporate donor partnerships</li>
+              <li>API for third-party integrations</li>
+              <li>Advanced analytics & reporting</li>
+              <li>Community forums & social features</li>
+              <li>10,000+ user milestone</li>
+            </ul>
+            <div class="tl-status status-planned">📋 Planned</div>
+          </div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="tl-dot phase5-dot"></div>
+          <div class="tl-card">
+            <div class="tl-phase">Phase 5</div>
+            <div class="tl-period">Month 15–18 · Q1 2027</div>
+            <h3>Global Launch & Sustainability</h3>
+            <ul>
+              <li>International expansion (5+ countries)</li>
+              <li>Blockchain food traceability</li>
+              <li>Carbon credit marketplace</li>
+              <li>Government & UN partnerships</li>
+              <li>Financial sustainability model</li>
+              <li>1M+ meals saved milestone</li>
+            </ul>
+            <div class="tl-status status-planned">🌍 Vision</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ IMPACT GOALS ══════════════ -->
+  <section class="section impact-section">
+    <div class="container">
+      <div class="section-label">Our Goals</div>
+      <h2 class="section-title">Projected Impact</h2>
+      <p class="section-sub">By 2027, FoodShare aims to transform food redistribution at scale.</p>
+      <div class="impact-grid">
+        <div class="impact-card">
+          <div class="impact-num">1M+</div>
+          <div class="impact-label">Meals Saved</div>
+          <div class="impact-desc">Meals redistributed from waste to plates</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-num">50K+</div>
+          <div class="impact-label">Active Users</div>
+          <div class="impact-desc">Donors, recipients & volunteers on platform</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-num">500+</div>
+          <div class="impact-label">Partner NGOs</div>
+          <div class="impact-desc">Organizations integrated and empowered</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-num">20+</div>
+          <div class="impact-label">Cities Covered</div>
+          <div class="impact-desc">Urban and semi-urban areas served</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-num">5K</div>
+          <div class="impact-label">Tons CO₂ Avoided</div>
+          <div class="impact-desc">Methane reduction from diverted food waste</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-num">$2M</div>
+          <div class="impact-label">Food Value Saved</div>
+          <div class="impact-desc">Economic value of food redistributed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ TEAM ══════════════ -->
+  <section class="section team-section" id="team">
+    <div class="container">
+      <div class="section-label">The Team</div>
+      <h2 class="section-title">Who We Are</h2>
+      <p class="section-sub">A passionate multidisciplinary team driven by the mission to end food waste and fight hunger.</p>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar" style="background: linear-gradient(135deg,#4ade80,#22c55e)">A</div>
+          <h4>Abhishek</h4>
+          <span class="team-role">Founder & Lead Developer</span>
+          <p>Full-stack engineer and social entrepreneur passionate about tech-for-good solutions.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background: linear-gradient(135deg,#60a5fa,#3b82f6)">D</div>
+          <h4>Design Lead</h4>
+          <span class="team-role">UX / UI Designer</span>
+          <p>Crafting intuitive experiences that make it effortless for anyone to donate or receive food.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background: linear-gradient(135deg,#f97316,#ea580c)">M</div>
+          <h4>Marketing Lead</h4>
+          <span class="team-role">Growth & Community</span>
+          <p>Building partnerships with NGOs, restaurants, and local communities to drive adoption.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background: linear-gradient(135deg,#a855f7,#9333ea)">O</div>
+          <h4>Operations Lead</h4>
+          <span class="team-role">Logistics & Partnerships</span>
+          <p>Overseeing volunteer networks, NGO relations, and on-ground food redistribution ops.</p>
+        </div>
+      </div>
+      <div class="join-team">
+        <h3>Join Our Mission</h3>
+        <p>We're looking for developers, designers, volunteers, and NGO partners to help us fight food waste.</p>
+        <a href="#contact" class="btn btn-primary">Join FoodShare</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ BUSINESS MODEL ══════════════ -->
+  <section class="section biz-section">
+    <div class="container">
+      <div class="section-label">Sustainability</div>
+      <h2 class="section-title">Business Model</h2>
+      <p class="section-sub">Free for individuals and NGOs. Revenue from corporate partners sustains our mission.</p>
+      <div class="biz-grid">
+        <div class="biz-card free">
+          <div class="biz-tier">🆓 Free Forever</div>
+          <h3>Community</h3>
+          <ul>
+            <li>✅ Individual donors & recipients</li>
+            <li>✅ NGOs & shelters</li>
+            <li>✅ Volunteer access</li>
+            <li>✅ Basic impact stats</li>
+            <li>✅ Map & notifications</li>
+          </ul>
+        </div>
+        <div class="biz-card pro">
+          <div class="biz-tier">💼 Subscription</div>
+          <h3>Business Partner</h3>
+          <ul>
+            <li>✅ Restaurant chains & retailers</li>
+            <li>✅ Bulk donation management</li>
+            <li>✅ CSR reporting & certificates</li>
+            <li>✅ Priority matching & routing</li>
+            <li>✅ API access</li>
+          </ul>
+        </div>
+        <div class="biz-card enterprise">
+          <div class="biz-tier">🏢 Enterprise</div>
+          <h3>Government & Corporates</h3>
+          <ul>
+            <li>✅ White-label deployment</li>
+            <li>✅ Full analytics suite</li>
+            <li>✅ Dedicated support</li>
+            <li>✅ Custom integrations</li>
+            <li>✅ Carbon credit reporting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-title">Ready to Join Us?</h2>
+          <p>Whether you're a donor, recipient, volunteer, NGO, or investor — there's a place for you in the FoodShare community.</p>
+          <div class="contact-info">
+            <div class="ci-item">📧 <span>hello@foodshare.app</span></div>
+            <div class="ci-item">🌐 <span>www.foodshare.app</span></div>
+            <div class="ci-item">📍 <span>India — Scaling Globally</span></div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn">🐦 Twitter</a>
+            <a href="#" class="social-btn">💼 LinkedIn</a>
+            <a href="#" class="social-btn">📷 Instagram</a>
+            <a href="#" class="social-btn">💻 GitHub</a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="e.g. Priya Sharma" required />
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="priya@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>I am a...</label>
+              <select>
+                <option>Food Donor (Restaurant / Home)</option>
+                <option>NGO / Shelter / Food Bank</option>
+                <option>Recipient / Individual</option>
+                <option>Volunteer</option>
+                <option>Investor / Partner</option>
+                <option>Developer wanting to contribute</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea rows="4" placeholder="Tell us how you'd like to contribute or learn more..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message 🚀</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-icon">🍃</span>
+          <span class="logo-text">FoodShare</span>
+          <p class="footer-tagline">Share More. Waste Less. Feed More.</p>
+        </div>
+        <div class="footer-links">
+          <div class="fl-col">
+            <strong>Platform</strong>
+            <a href="#overview">Overview</a>
+            <a href="#features">Features</a>
+            <a href="#roadmap">Roadmap</a>
+          </div>
+          <div class="fl-col">
+            <strong>Community</strong>
+            <a href="#ngo">NGO Partners</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Join Us</a>
+            <a href="#">Volunteer</a>
+          </div>
+          <div class="fl-col">
+            <strong>Resources</strong>
+            <a href="#">Documentation</a>
+            <a href="#">API Docs</a>
+            <a href="#">Press Kit</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 FoodShare. Built with ❤️ to fight hunger &amp; food waste.</p>
+        <p>Share More. Waste Less. Feed More.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
